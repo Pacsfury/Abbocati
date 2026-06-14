@@ -13,7 +13,9 @@ You are an avocado, which has been given the orders to go through The Kitchen, a
 
 There are two (planned) obstacles:
 
-| Knife | Defeats you                       |
+
+| Knife | Defeats you |
+| :--- | :--- |
 | Stair | If you don't jump, you will crash |
 
 ## Clarification
