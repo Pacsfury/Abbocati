@@ -7,7 +7,7 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
-	self.position.x -= 2
+	self.position.x -= 2 * delta * 100
 	if self.position.x < -700:
 		self.position.x = 350
 
