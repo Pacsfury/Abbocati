@@ -1,11 +1,11 @@
 [gd_scene format=3 uid="uid://d2gfrceaq3r7i"]
 
-[ext_resource type="Texture2D" uid="uid://dqdx1o5lq1kxm" path="res://ASSETS/icon.svg" id="1_2sn7y"]
-[ext_resource type="Script" uid="uid://dojlpijwi6yt2" path="res://SCRIPTS/player.gd" id="1_w4tjv"]
+[ext_resource type="Script" uid="uid://blloo7lwatj1a" path="res://SCRIPTS/player.gd" id="1_w4tjv"]
+[ext_resource type="Texture2D" uid="uid://bo80ww7u7ycl1" path="res://ASSETS/player.png" id="2_l2rif"]
 [ext_resource type="PackedScene" uid="uid://cme1it7vjbjsk" path="res://SCENES/enemy.tscn" id="3_l2rif"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_mwb40"]
-size = Vector2(108.5, 99)
+size = Vector2(105.13031, 117.90265)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_l2rif"]
 size = Vector2(1158, 252)
@@ -18,10 +18,12 @@ script = ExtResource("1_w4tjv")
 
 [node name="Icon" type="Sprite2D" parent="Player" unique_id=614242582]
 position = Vector2(578, 373)
-texture = ExtResource("1_2sn7y")
+scale = Vector2(0.16000003, 0.16000003)
+texture = ExtResource("2_l2rif")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Player" unique_id=97450694 groups=["player"]]
-position = Vector2(579.75, 372.5)
+position = Vector2(578.086, 372.5005)
+scale = Vector2(0.9876121, 0.8735936)
 shape = SubResource("RectangleShape2D_mwb40")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=1697709285]
@@ -36,4 +38,4 @@ shape = SubResource("RectangleShape2D_l2rif")
 [node name="Enemies" type="Node" parent="." unique_id=1717590191]
 
 [node name="Enemy" parent="Enemies" unique_id=439016817 instance=ExtResource("3_l2rif")]
-position = Vector2(724, 423)
+position = Vector2(1000.99994, 451.00003)
