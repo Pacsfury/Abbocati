@@ -17,3 +17,4 @@ func _process(delta: float) -> void:
 func _player_death(body: Node2D) -> void:
 	if body.is_in_group("player"):
 		body.queue_free()
+		get_tree().call_deferred("change_scene_to_file", "res://SCENES/menu.tscn")
