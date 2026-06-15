@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://vs2jj76cluim"]
 
-[ext_resource type="FontFile" uid="uid://kyncplrkswnp" path="res://ASSETS/Mochi Boom DEMO.ttf" id="1_i17ep"]
+[ext_resource type="FontFile" uid="uid://kyncplrkswnp" path="res://ASSETS/Fonts/Mochi Boom DEMO.ttf" id="1_i17ep"]
 [ext_resource type="Script" uid="uid://pp2jt1jme8u8" path="res://SCRIPTS/menu.gd" id="2_qnims"]
 
 [sub_resource type="Theme" id="Theme_i17ep"]
