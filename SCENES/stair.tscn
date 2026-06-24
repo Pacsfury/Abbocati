@@ -1,0 +1,44 @@
+[gd_scene format=3 uid="uid://blmgj7dge1jew"]
+
+[ext_resource type="Texture2D" uid="uid://bs72fhlsynua5" path="res://icon.svg" id="1_50721"]
+[ext_resource type="Script" uid="uid://dwhttus08cpl8" path="res://stair.gd" id="2_y3fei"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7tjra"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_50721")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1itxa"]
+size = Vector2(10, 10)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_50721"]
+size = Vector2(134.5561, 53.598022)
+
+[node name="stair" type="StaticBody2D" unique_id=1910012326]
+scale = Vector2(4.7223754, 4.7223754)
+script = ExtResource("2_y3fei")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=344604725]
+position = Vector2(-0.63527346, 5.293946)
+scale = Vector2(0.1547091, 0.08675603)
+sprite_frames = SubResource("SpriteFrames_7tjra")
+
+[node name="killer" type="Area2D" parent="." unique_id=940887763]
+scale = Vector2(1, 0.9999999)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="killer" unique_id=1082416910]
+position = Vector2(-5.0821915, 5.293947)
+shape = SubResource("RectangleShape2D_1itxa")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1751734428]
+position = Vector2(-0.03239327, -4.310885)
+scale = Vector2(0.1547091, 0.15520819)
+shape = SubResource("RectangleShape2D_50721")
+
+[connection signal="body_entered" from="killer" to="." method="_player_death_st"]
