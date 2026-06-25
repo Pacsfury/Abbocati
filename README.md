@@ -13,7 +13,7 @@ You are an avocado, which has been given the orders to go through The Kitchen, a
 
 There are two (planned) obstacles:
 
-| Name  | Description |
+| Name  | Description | 
 | :---  | :---        |
 | Knife | Defeats you |
 | Stair | If you don't jump, you will crash |
@@ -21,7 +21,7 @@ There are two (planned) obstacles:
 
 ## Clarification
 
-This game is currently **INCOMPLETE**. Has been just started, this is why the assets are default Godot's logo, and why you instadie, and why there is NOTHING to do right now.
+This game is currently **INCOMPLETE**. Has been just started, this is why the assets are default Godot's logo.
 
 I hope I get this playable as soon as possible.
 
