@@ -12,7 +12,7 @@ func _process(delta: float) -> void:
 	if can_move:
 		self.position.x -= 2 * delta * 100
 		if self.position.x < -1500:
-			self.position.x = 350
+			self.position.x = 1000
 
 func _player_death_st(body: Node2D) -> void:
 	if body.is_in_group("player"):

@@ -1676,4 +1676,4 @@ shape = SubResource("RectangleShape2D_rmssh")
 position = Vector2(1000.99994, 451.00003)
 
 [node name="stair1" parent="Enemies" unique_id=481849821 instance=ExtResource("4_rmssh")]
-position = Vector2(826, 438)
+position = Vector2(826, 446)
